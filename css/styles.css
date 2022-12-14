@@ -306,7 +306,7 @@ address p:hover {
 
 .box-title-img {
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     width: 100%;
     background: rgba(47, 48, 58, 0.8);
     padding: 26px 0;
@@ -366,8 +366,8 @@ address p:hover {
 }
 
 .our-team li img:hover {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 0px;
+   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 0px;*/
 }
 
 .name {
@@ -579,6 +579,10 @@ address p:hover {
     
 }
 
+.portfolio-link {
+    text-decoration: none;
+}
+
 .pf-work p {
     margin: 4px 0 0 0;
     font-style: normal;
@@ -619,7 +623,8 @@ address p:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 } 
 
-.portfolio-link:hover .overlay {
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay {
     transform: translateY(0);
 }
 
@@ -869,7 +874,7 @@ footer {
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 12px;
+    margin: 0 0 12px 0;
 }
 
 .container-input {
